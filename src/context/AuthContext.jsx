@@ -3,7 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const AuthContext = createContext(null);
 
 // hardcoded mock credentials - would be a real API in production
-const MOCK_EMAIL = "admin@company.com";
+const MOCK_EMAIL = "admin@Cloudoniq.com";
 const MOCK_PASSWORD = "admin123";
 
 export function AuthProvider({ children }) {

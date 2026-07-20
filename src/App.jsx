@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "../src/context/AuthContext";
 import DashboardLayout from "./components/layout/DashboardLayout";
+import Login from "./Pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "../src/Pages/DashBoard";
 import './App.css'
@@ -10,6 +11,7 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
+                   <Route path="/login" element={<Login />} />
           <Route
             element={
               <ProtectedRoute>
