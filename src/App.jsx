@@ -4,9 +4,9 @@ import DashboardLayout from "./components/layout/DashboardLayout";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "../src/Pages/DashBoard";
-import Employees from "./pages/Employees";
-import EmployeeForm from "./pages/EmployeeForm";
-import EmployeeDetails from "./pages/EmployeeDetails";
+import Employees from "./Pages/Employees";
+import EmployeeForm from "./Pages/EmployeeForm";
+import EmployeeDetails from "./Pages/EmployeeDetails";
 
 import './App.css'
 
