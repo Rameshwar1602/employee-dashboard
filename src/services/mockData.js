@@ -7,6 +7,17 @@ export const departments = [
   "Finance",
 ];
 
+export const roles = [
+  "Software Engineer",
+  "Senior Engineer",
+  "UI/UX Designer",
+  "Product Manager",
+  "Marketing Executive",
+  "Sales Representative",
+  "HR Manager",
+  "Accountant",
+];
+
 export const statuses = ["Active", "On Leave", "Inactive"];
 
 export const employees = [

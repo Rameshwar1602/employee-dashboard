@@ -5,6 +5,7 @@ import Login from "./Pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "../src/Pages/DashBoard";
 import Employees from "./pages/Employees";
+import EmployeeForm from "./pages/EmployeeForm";
 
 import './App.css'
 
@@ -23,6 +24,9 @@ function App() {
           >
             <Route path="/" element={<Dashboard />} />
              <Route path="/employees" element={<Employees />} />
+             <Route path="/employees/new" element={<EmployeeForm />} />
+             <Route path="/employees/:id/edit" element={<EmployeeForm />} />
+
 
           </Route>
 
