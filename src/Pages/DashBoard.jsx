@@ -28,13 +28,11 @@ function Dashboard() {
     };
   }, []);
 
-  // calculate the summary numbers
   const totalEmployees = employees.length;
   const activeEmployees = employees.filter((e) => e.status === "Active").length;
   const onLeave = employees.filter((e) => e.status === "On Leave").length;
   const departmentCount = new Set(employees.map((e) => e.department)).size;
 
-  // recently joined - sort by date desc and take top 5
   const recentJoins = [...employees]
     .sort((a, b) => new Date(b.joiningDate) - new Date(a.joiningDate))
     .slice(0, 5);
@@ -54,7 +52,6 @@ function Dashboard() {
         <p className="text-sm text-slate-500">Overview of your organization</p>
       </div>
 
-      {/* summary cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {loading ? (
           <>
@@ -93,7 +90,6 @@ function Dashboard() {
         )}
       </div>
 
-      {/* recently joined */}
       <div className="bg-white rounded-xl border border-slate-200 p-5">
         <h2 className="text-base font-semibold text-slate-800 mb-4">
           Recently Joined

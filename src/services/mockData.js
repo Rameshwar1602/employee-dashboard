@@ -1,3 +1,14 @@
+export const departments = [
+  "Engineering",
+  "Design",
+  "Marketing",
+  "Sales",
+  "Human Resources",
+  "Finance",
+];
+
+export const statuses = ["Active", "On Leave", "Inactive"];
+
 export const employees = [
   {
     id: "1",

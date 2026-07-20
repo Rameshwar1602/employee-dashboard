@@ -23,8 +23,7 @@ function Sidebar({ open, onClose }) {
         }`}
       >
         <div className="h-16 flex items-center gap-2 px-6 border-b border-slate-200">
-          <div className="h-8 w-8 rounded-lg bg-primary-600 text-white flex items-center justify-center font-bold">
-            E
+          <div className="h-8 w-8 rounded-lg bg-primary-600 text-white flex items-center justify-center font-bold">        
           </div>
           <span className="font-semibold text-slate-800">EmployeeAdmin</span>
         </div>
